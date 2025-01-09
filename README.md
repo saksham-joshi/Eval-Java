@@ -1,17 +1,57 @@
-# eval_in_java
+# 🔢 Eval-Java 🔢
 
-Python has a function called eval() used to solve string mathematical expressions but Java has nothing like this , so i developed this algorithm which
-can solve such expressions .
+#### Python has a function called eval() used to solve mathematical expressions in a string but Java has nothing like this, so i developed this algorithm which can do so.
 
-# How to use it ?
-1. Just specify the package name on the top of the evaluater.java file and you are good to go .
-2. In case you are not using packages, then put the evaluater.java file in the
-same directory of the file in which you are calling it.
+> #### Average Complexity: **O(n*log n)**
 
-# How to call it ?
-Here is the sample code :
-evaluater e1 = new evaluater();
-System.out.println(e1.evaluate("1280.33/(12*10.11)"));
+## 📝 Sample code 
+```java
+import evaluater.Evaluater;
+import evaluater.EvaluaterExceptions;
 
-# NOTE :
-evaluater.evaluate() function returns a empty string when the expression is not valid.
+public class sample {
+
+    public static void main(String[] args)
+    {
+        try
+        {
+            
+            Evaluater eval = new Evaluater("1280.33/(12*-10.11)");
+            System.out.println(eval.evaluate());
+        }
+        catch(EvaluaterExceptions.InvalidMathExpression excep)
+        {
+            System.out.println(excep);
+        }
+    }
+    
+}
+```
+
+> #### **NOTE:** ```evaluate() methods throw InvalidMathExpression exception if the given expression is invalid. ```
+
+
+## ➗ Supported operators ➕
+
+| Operators    |   Name         | Precedence      |
+| :-------:    |  :-------:     | :-----------:   |
+| **+**        | Addition       |       `1`       |
+| **-**        | Subtraction    |       `1`       |
+| **x**        | Multiplication |       `2`       |
+| **/**        | Division       |       `2`       |
+| **%**        | Modulus        |       `2`       |
+| **^**        | Power          |       `3`       |
+| **!**        | Not            |       `4`       |
+
+---
+
+## 🔗 Developer Links
+
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://sakshamjoshi.vercel.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sakshamjoshi27)
+[![Github](https://img.shields.io/badge/Visit_my-Github-purple)](https://github.com/saksham-joshi)
+[![X(Twitter)](https://img.shields.io/twitter/follow/sakshamjoshi27
+)](https://x.com/sakshamjoshi27)
+[![Static Badge](https://img.shields.io/badge/mail_at-social.sakshamjoshi%40gmail.com-aqua)](mailto:social.sakshamjoshi@gmail.com)
+
+---
