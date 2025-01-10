@@ -7,24 +7,24 @@ public final class EvaluaterUtility
 
     public static short preference(char __operator)
     {
-        switch(__operator)
-        {
-            case '+' : 
-            case '-' : return 1 ;
+        return switch(__operator) {
 
-            case '*' :
-            case 'x' :
-            case 'X' :
-            case '/' :
-            case '÷' :
-            case '%' : return 2 ; 
+            case '+' ,
+                 '-'   -> 1;
 
-            case '^' : return 3 ;
+            case '*' ,
+                 'X' ,
+                 'x' ,
+                 '/' ,
+                 '÷' ,
+                 '%'   -> 2;
+            
+            case '^'   -> 3;
 
-            case '!' : return 4 ;
-        }
+            case '!'   -> 4;
 
-        return 0;
+            default -> 0;
+        };
     }
 
     public static boolean isOperator(char __operator)
