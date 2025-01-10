@@ -110,7 +110,7 @@ public final class Evaluater {
         double d2 = this._value_stack.pop();
         double d1 = this._value_stack.pop();
 
-        System.out.println(d1 + " " + __operator + " " + d2);
+        //System.out.println(d1 + " " + __operator + " " + d2);
 
         switch(__operator)
         {
