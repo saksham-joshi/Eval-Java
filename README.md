@@ -2,7 +2,10 @@
 
 #### Python has a function called eval() used to solve mathematical expressions in a string but Java has nothing like this, so i developed this algorithm which can do so.
 
-> #### Average Complexity: **O(n*log n)**
+  **You can use this package to create a calculator which can solve complex mathematical expressions.**
+
+> #### ```Average Time Complexity: **O(n)**```
+> #### ```Average Space Complexity: **O(k + m)**```
 
 ## 📝 Sample code 
 ```java
@@ -37,13 +40,13 @@ public class sample {
 | :-------:    |  :-------:     | :-----------:   |
 | **+**        | Addition       |       `1`       |
 | **-**        | Subtraction    |       `1`       |
-| **x**        | Multiplication |       `2`       |
-| **/**        | Division       |       `2`       |
+| **x,*,X**    | Multiplication |       `2`       |
+| **/,÷**      | Division       |       `2`       |
 | **%**        | Modulus        |       `2`       |
 | **^**        | Power          |       `3`       |
 | **!**        | Not            |       `4`       |
 
----
+
 
 ## 🔗 Developer Links
 
